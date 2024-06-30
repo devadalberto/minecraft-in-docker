@@ -16,7 +16,7 @@ You have to install and configure CurseForge, [I will write here some settings I
 3. Install CurseForge (and I would also install Minecraft, just in case)
 4. [Configure CurseForge Settings for Minecraft.](/docs/curseforge.md)
 5. [Get an API key for CurseForge.](/docs/curseforge.md)
-6. Configure Port Forwarding for your Router.
+6. Configure Port Forwarding for your Router. (if you plan to play with friends online)
 
 ## TL;DR ('high level' instructions to get this running)
 
@@ -35,12 +35,27 @@ mv .env.sample .env
 9. run the following commands to start the docker container (Minecraft Server):
 
 ```
+# steps 3 and 4
 make build-atm8
+make start-atm8
+```
+> Here it is VERY likely you will see an error in regards missing mods and mods with conflicting/different versions
+10. Download the missing mods (you'll get an error telling which mods are missing and which ones are different versions)
+11. Upload the mods you just downloaded to the server using filebrowser container.
+12. Rebuild and re-start the container
+13. 
 
+```
+# step 12
+make stop-atm8
+make build-atm8
 make start-atm8
 ```
 
-10. 
+13. Launch your CurseForge
+14. Install ATM8 mod
+15. Click on Play on the ATM8 mod
+16. Enjoy!
 
 ## Why?
 Well, I have a couple of teenagers and they both play Minecraft, and one of they asked me if I could set him up a Minecraft Server for him to play with his friends.
@@ -52,7 +67,7 @@ Well, is just my way to document this so I don't waste time (again) configuring 
 ## Special Thanks
 - [Geoff Bourne | creator of itzg docker image](https://github.com/itzg/docker-minecraft-server)
 
-## More thanks to all those who posted their issues and ways to solve it on the internet :)
+## Thanks to all those who posted their issues and ways to solve it on the internet
 - [scratchisthebest (at reddit)](https://www.reddit.com/r/feedthebeast/comments/e2zogj/where_to_find_mod_and_file_ids_for_mods/)
 - [Josh Barrat](https://serialized.net/2021/02/minecraft_server_docker/)
 - [AllTheMods Team](https://github.com/AllTheMods/ATM-8)
