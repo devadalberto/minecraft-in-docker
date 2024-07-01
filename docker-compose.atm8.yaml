@@ -10,9 +10,8 @@ services:
       # MOTD: "Welcome to My Server" single line MOTD
       SERVER_NAME: "Minecraft (atm8) in server"
       MOTD: |
-        Welcome to my 
-         §l§cMinecraft server§r
-         §nDO NOT DO DUMB S...TUFF
+        Welcome to my §l§cMinecraft server§r 
+        §nDO NOT DO DUMB S...TUFF
       # allocate from https://console.curseforge.com/ and set in .env file
       CF_API_KEY: ${CF_API_KEY}
       CF_PAGE_URL: https://www.curseforge.com/minecraft/modpacks/all-the-mods-8
