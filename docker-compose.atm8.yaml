@@ -28,7 +28,7 @@ services:
     restart: unless-stopped
     volumes:
       - data:/data
-      - ../downloads:/downloads
+      - ./downloads:/downloads
   # Since Docker's default volume driver creates volumes owned by root, this
   # init container will change ownership to match final UID of mc service, above
   init-filebrowser:
