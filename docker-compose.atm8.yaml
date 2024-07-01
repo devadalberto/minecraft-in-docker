@@ -8,6 +8,7 @@ services:
       EULA: "true"
       MOD_PLATFORM: AUTO_CURSEFORGE
       # MOTD: "Welcome to My Server" single line MOTD
+      SERVER_NAME: "Minecraft (atm8) in server"
       MOTD: |
         Welcome to my 
          §l§cMinecraft server§r

@@ -43,7 +43,6 @@ make start-atm8
 10. Download the missing mods (you'll get an error telling which mods are missing and which ones are different versions)
 11. Upload the mods you just downloaded to the server using filebrowser container.
 12. Rebuild and re-start the container
-13. 
 
 ```
 # step 12
@@ -54,7 +53,7 @@ make start-atm8
 
 13. Launch your CurseForge
 14. Install ATM8 mod
-15. Click on Play on the ATM8 mod
+15. Click on Play orange button on the ATM8 mod
 16. Enjoy!
 
 ## Why?
@@ -72,7 +71,10 @@ Well, is just my way to document this so I don't waste time (again) configuring 
 - [Josh Barrat](https://serialized.net/2021/02/minecraft_server_docker/)
 - [AllTheMods Team](https://github.com/AllTheMods/ATM-8)
 - [CurseForge](https://www.curseforge.com/)
-- 
+
+## URLS
+- [github for itzg/docker-minecraft-server](https://github.com/itzg/docker-minecraft-server)
+- [readthedocs for docker-minecraft-server](https://docker-minecraft-server.readthedocs.io/en/latest/)
 
 
 ### ToDo
