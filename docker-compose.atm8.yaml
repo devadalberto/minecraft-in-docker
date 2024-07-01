@@ -7,6 +7,11 @@ services:
     environment:
       EULA: "true"
       MOD_PLATFORM: AUTO_CURSEFORGE
+      # MOTD: "Welcome to My Server" single line MOTD
+      MOTD: |
+        Welcome to my 
+         §l§cMinecraft server§r
+         §nDO NOT DO DUMB S...TUFF
       # allocate from https://console.curseforge.com/ and set in .env file
       CF_API_KEY: ${CF_API_KEY}
       CF_PAGE_URL: https://www.curseforge.com/minecraft/modpacks/all-the-mods-8
@@ -17,8 +22,8 @@ services:
       RCON_PASSWORD: ${PASSWORD}
       RCON_PORT: 25575
       MEMORY: 12G
-      CUSTOM_SERVER_PROPERTIES: |
-        ALLOW_FLIGHT=TRUE
+      OVERRIDE_SERVER_PROPERTIES: "true"
+      ALLOW_FLIGHT: "true"
     restart: unless-stopped
     volumes:
       - data:/data
